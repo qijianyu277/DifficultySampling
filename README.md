@@ -144,11 +144,15 @@ llamafactory-cli train examples/train full/qwen2.5vl_sft.yaml
 ---
 ## Evalution
 ### Jsonl Data for Evaluation
+To be added.
 ### Evaluation Scripts
+To be added.
 ### Results Display
+To be added.
 ## Institution
 - ZTE-AIM
 - School of Computer Science, Central South University, Changsha, Hunan, China
 ## Citation
 ### To be added.
+
 
