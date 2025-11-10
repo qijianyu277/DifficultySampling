@@ -8,12 +8,12 @@ We deeply investigate the difficulty-aware data sampling in multimodal post-trai
 ## Models & Data Checkpoints
 We provide the GRPO-only training weights on the visual reasoning task (VRT) and visual perception task (VPT) in the following table.
 
-| Algorithm  | Tasks Type  | Checkpoint                    | 
-|------------------------|----------------|-------------------------------|
-| PISM | VRT   |    To_be_uploaded       | 
-| PISM | VPT   |    To_be_uploaded       | 
-| CMAB | VRT   |    To_be_uploaded       |
-| CMAB | VPT   |    To_be_uploaded       |
+| Algorithm | Tasks Type | Checkpoint  | 
+|------|-------|-----------------------|
+| PISM | VRT   |    To_be_uploaded     | 
+| PISM | VPT   |    To_be_uploaded     | 
+| CMAB | VRT   |    To_be_uploaded     |
+| CMAB | VPT   |    To_be_uploaded     |
 ## Data
 The data we use comes from the paper [One RL to See Them All](https://arxiv.org/abs/2505.18129), and through the algorithms we provide below, you can easily obtain the data for model post-training.
 ## Requirement
@@ -22,9 +22,9 @@ This project utilizes a dual-framework training architecture:\
 ```
    conda create -n swift python=3.10
    conda activate swift
-   pip install ms-swift==3.5.0
+   pip install ms-swift==3.7.2
 ```
-2. We implete SFT training based on [LlamaFactory](https://github.com/hiyouga/LLaMA-Factory) for specifically we use :
+2. We implete SFT training based on [LlamaFactory](https://github.com/hiyouga/LLaMA-Factory) for specifically we use LlamaFactory 0.9.3:
 ```
    conda create -n llf python=3.10
    conda activate llf
@@ -151,3 +151,4 @@ llamafactory-cli train examples/train full/qwen2.5vl_sft.yaml
 - School of Computer Science, Central South University, Changsha, Hunan, China
 ## Citation
 ### To be added.
+
