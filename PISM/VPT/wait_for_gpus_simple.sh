@@ -1,11 +1,11 @@
-#!/bin/bash
+#!path/to/your/bash
 
 # ==============================================================================
 # 配置部分：请根据您的实际情况修改以下变量
 # ==============================================================================
 
 # 目标脚本的完整路径，当GPU空闲时将执行此脚本
-TARGET_SCRIPT="/mnt/tenant-home_speed/ywr/Token_mask/code/run_GRPO_VPT_random_random2.sh"
+TARGET_SCRIPT="path/to/your/run_GRPO_VPT_random_random2.sh"
 
 # 需要空闲的GPU数量
 REQUIRED_GPUS=8
@@ -15,7 +15,7 @@ CHECK_INTERVAL_SECONDS=30
 
 # 日志文件路径，用于记录本监控脚本的运行状态
 # 建议将其放在一个持久化的位置，以便查看历史记录
-LOG_FILE="/mnt/tenant-home_speed/ywr/Token_mask/code/gpu_wait_and_run_simple.log"
+LOG_FILE="path/to/your/gpu_wait_and_run_simple.log"
 
 # 判断GPU是否空闲的内存使用阈值（MiB）。
 # 如果GPU利用率为0%且内存使用低于此阈值，则认为GPU空闲。
@@ -53,7 +53,7 @@ while true; do
     for line in $gpu_status_output; do
         total_gpus=$((total_gpus + 1))
         utilization=$(echo "$line" | cut -d',' -f1 | xargs)
-        memory_used=$(echo "$line" | cut -d',' -f2 | sed 's/MiB//' | xargs)
+        memory_used=$(echo "$line" | cut -d',' -f2 | sed 'spath/to/your/' | xargs)
 
         if (( $(echo "$utilization == 0" | bc -l) )) && (( $(echo "$memory_used < $MEMORY_THRESHOLD_MB" | bc -l) )); then
             idle_gpus=$((idle_gpus + 1))
