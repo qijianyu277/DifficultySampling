@@ -153,6 +153,15 @@ To be added.
 - ZTE-AIM
 - School of Computer Science, Central South University, Changsha, Hunan, China
 ## Citation
-### To be added.
+@misc{qi2025revisitingdatasamplingmultimodal,
+      title={Revisiting the Data Sampling in Multimodal Post-training from a Difficulty-Distinguish View}, 
+      author={Jianyu Qi and Ding Zou and Wenrui Yan and Rui Ma and Jiaxu Li and Zhijie Zheng and Zhiguo Yang and Rongchang Zhao},
+      year={2025},
+      eprint={2511.06722},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2511.06722}, 
+}
+
 
 
