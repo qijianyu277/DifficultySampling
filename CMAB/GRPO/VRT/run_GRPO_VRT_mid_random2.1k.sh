@@ -25,7 +25,7 @@ swift rlhf \
     --dataloader_num_workers 0 \
     --num_generations 8 \
     --temperature 1.0 \
-    --system 'You are a helpful assistant specialized in visual reasoning tasks. Always begin by thinking through the problem step-by-step and explain your reasoning clearly inside <think> and <path/to/your/think> tags. Then, present your final answer strictly within <answer> and <path/to/your/answer> tags. Do not include any other text outside these tags.' \
+    --system 'You are a helpful assistant specialized in visual reasoning tasks. Always begin by thinking through the problem step-by-step and explain your reasoning clearly inside <think> and </think> tags. Then, present your final answer strictly within <answer> and </answer> tags. Do not include any other text outside these tags.' \
     --deepspeed zero3 \
     --log_completions true \
     --report_to wandb \
