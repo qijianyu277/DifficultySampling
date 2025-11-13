@@ -182,6 +182,11 @@ llamafactory-cli train examples/train full/qwen2.5vl_sft.yaml
 ---
 ## Evalution
 ### Jsonl Data for Evaluation
+To be added.
+### Evaluation Scripts
+To be added.
+### Results Display
+### Jsonl Data for Evaluation
 | Training paradigm       | MathVista | MMVet  | OCRBench | HBench  | MMMU   | MMStar  |
 |-------------------------|-----------|--------|----------|---------|--------|---------|
 | GRPO-only(fullset)      | 70.000    | 51.147 | 77.200   | 68.034  | 0.557  | 0.615   |
@@ -196,10 +201,6 @@ llamafactory-cli train examples/train full/qwen2.5vl_sft.yaml
 | SFT(rand_h)+GRPO(rand_m)| 67.600    | 50.321*| 77.500   | 68.980* | 0.526  | 0.610   |
 | GRPO-only(random)       | 67.700    | 45.550 | 76.900*  | **69.401**  | 0.545* | 0.625   |
 | GRPO-only(mid+hard)     | **68.300**| **50.367** | 76.800 | 68.244 | **0.550** | **0.629** |
-### Evaluation Scripts
-To be added.
-### Results Display
-To be added.
 ## Institution
 - ZTE-AIM
 - School of Computer Science, Central South University, Changsha, Hunan, China
@@ -213,6 +214,7 @@ To be added.
       primaryClass={cs.CV},
       url={https://arxiv.org/abs/2511.06722}, 
 }
+
 
 
 
