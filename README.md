@@ -182,7 +182,20 @@ llamafactory-cli train examples/train full/qwen2.5vl_sft.yaml
 ---
 ## Evalution
 ### Jsonl Data for Evaluation
-To be added.
+| Training paradigm       | MathVista | MMVet  | OCRBench | HBench  | MMMU   | MMStar  |
+|-------------------------|-----------|--------|----------|---------|--------|---------|
+| GRPO-only(fullset)      | 70.000    | 51.147 | 77.200   | 68.034  | 0.557  | 0.615   |
+| GRPO-only(unsolved)     | 68.700    | 54.541 | 77.700   | 69.085  | 0.536  | 0.615   |
+| SFT(mid)+GRPO(hard)     | 66.800    | 41.239 | 75.100   | 68.244  | 0.503  | 0.627*  |
+| SFT(mid)+GRPO(rand_h)   | 66.500    | 42.431 | 75.200   | 67.823  | 0.499  | 0.626   |
+| SFT(rand_m)+GRPO(hard)  | 67.800    | 36.514 | 75.100   | 68.875  | 0.499  | 0.625   |
+| SFT(rand_m)+GRPO(rand_h)| 67.500    | 42.798 | 75.000   | 68.769  | 0.496  | 0.623   |
+| SFT(hard)+GRPO(mid)     | 67.400    | 34.037 | 75.200   | 68.244  | 0.501  | 0.618   |
+| SFT(hard)+GRPO(rand_m)  | 67.900    | 48.945 | 75.900   | 67.718  | 0.538  | 0.609   |
+| SFT(rand_h)+GRPO(mid)   | 68.100*   | 49.500 | 76.500   | 68.454  | 0.534  | 0.607   |
+| SFT(rand_h)+GRPO(rand_m)| 67.600    | 50.321*| 77.500   | 68.980* | 0.526  | 0.610   |
+| GRPO-only(random)       | 67.700    | 45.550 | 76.900*  | **69.401**  | 0.545* | 0.625   |
+| GRPO-only(mid+hard)     | **68.300**| **50.367** | 76.800 | 68.244 | **0.550** | **0.629** |
 ### Evaluation Scripts
 To be added.
 ### Results Display
@@ -200,6 +213,7 @@ To be added.
       primaryClass={cs.CV},
       url={https://arxiv.org/abs/2511.06722}, 
 }
+
 
 
 
