@@ -20,7 +20,7 @@ We provide the GRPO-only training weights on the visual reasoning task (VRT) and
 The data we use comes from the paper [One RL to See Them All](https://arxiv.org/abs/2505.18129), and through the algorithms we provide below, you can easily obtain the data for model post-training.
 ## Requirement
 This project utilizes a dual-framework training architecture:\
-1. We perform GRPO based on [MS-Swift](https://github.com/modelscope/ms-swift) for specifically we use ms-swift 3.5.0:
+1. We perform GRPO based on [MS-Swift](https://github.com/modelscope/ms-swift) for specifically we use ms-swift 3.7.2:
 ```
    conda create -n swift python=3.10
    conda activate swift
@@ -214,6 +214,7 @@ To be added.
       primaryClass={cs.CV},
       url={https://arxiv.org/abs/2511.06722}, 
 }
+
 
 
 
